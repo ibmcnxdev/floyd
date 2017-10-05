@@ -1,0 +1,21 @@
+{
+  "extensions": [
+    {
+      "path": "global",
+      "application": "com.appfusions.customizer.floyd_core",
+      "payload": {
+        "include-files": [
+          "com_appfusions/floyd_devtools/main.global.js"
+        ]
+      },
+      "name": "AppFusions Floyd DevTools extension",
+      "type": "com.ibm.customizer.ui"
+    }
+  ],
+  "name": "com.appfusions.customizer.floyd",
+  "description": "AppFusions Floyd - DevTools for Connections Customizer",
+  "services": [
+    "Customizer"
+  ],
+  "title": "AppFusions Floyd"
+}
