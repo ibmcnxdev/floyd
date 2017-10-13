@@ -6,7 +6,10 @@
       "payload": {
         "include-files": [
           "com_appfusions/floyd_core/core.global.js"
-        ]
+        ],
+        "include-repo"‎: ‎{‎ 
+          ‎"name"‎: ‎"floyd"‎ 
+        ‎}
       },
       "name": "AppFusions Floyd Core extensions",
       "type": "com.ibm.customizer.ui"
