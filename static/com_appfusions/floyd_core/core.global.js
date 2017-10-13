@@ -14,7 +14,7 @@ var __floydHooks = __floydHooks || [];
 
         debug: function(message) {
 
-            if (!debugEnabled) return;
+            if (!this.debugEnabled) return;
 
             console.log("Floyd.DEBUG " + message);
         },
