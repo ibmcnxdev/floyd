@@ -1,0 +1,52 @@
+#
+# Caddyfile to build a man in the middle reverse proxy helping to realize Connections Customizer Extemsions
+#
+# Get caddy from: https://caddyserver.com/
+#
+# Here's the trick
+#
+# 1- You override your hosts file by adding 
+#		127.0.0.1 <your connections datacenter hostname>
+# 2- You set Caddy to generate a self signed certificate and act as a reverse proxy if front of connections cloud
+# 3- Proxy exceptions and rewrite rules in this configuration exclude a subset of the Connections Customizer url space
+# 4- A rewrite rule maps local filesystem to the muse-static url space allowing to load resources from local
+
+https://apps.na.collabserv.com {
+
+	# 2 - Setup self signed certificate
+	tls self_signed
+
+	# 3 - Setup proxy rule to reverse-proxy the actual  Connections Cloud environmnet
+	#	- Notice the "except" rule excluding paths served by your customization
+
+	proxy / https://23.223.76.234 {
+		header_upstream Host {host}
+		header_downstream -Strict-Transport-Security ""
+		except /files/muse-static/com_appfusions /static
+		insecure_skip_verify
+	}
+
+	# 4 - Setup a rewrite rule serving local resources as if they were deployed in Connections Customizer
+	rewrite /files/muse-static/com_appfusions/ {
+		regexp (.*)
+		to /static/com_appfusions/{1}
+	} 
+
+}
+
+#
+# Here is a map of hostnames to IP address to be used in the proxy directive
+#
+# apps.collabservintegration.com     # 169.54.90.100
+# apps.ce.collabserv.com             # 104.83.92.234
+# apps.na.collabserv.com             # 23.223.76.234
+#
+# Note on HSTS security and how o workaround it
+# 
+# Connections Cloud implements HSTS rules
+#
+# This solution is an actual man in the middle type of attack and you need to circumvent security controls in your development browser
+#
+# Chrome tip: when the unsecured site screen is shown.. just type "badidea" and a temporary session will be started allowed you
+# to work against the "proxied" environment disregarding the HSTS warning
+#

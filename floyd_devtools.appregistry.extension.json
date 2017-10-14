@@ -6,7 +6,10 @@
       "payload": {
         "include-files": [
           "com_appfusions/floyd_devtools/main.global.js"
-        ]
+        ],
+        "include-repo"‎: ‎{‎ 
+          ‎"name"‎: ‎"floyd"‎ 
+        ‎}
       },
       "name": "AppFusions Floyd DevTools extension",
       "type": "com.ibm.customizer.ui"

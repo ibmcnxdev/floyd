@@ -1,0 +1,24 @@
+{
+  "extensions": [
+    {
+      "path": "homepage",
+      "application": "com.appfusions.customizer.floyd.samples.homepage",
+      "payload": {
+        "include-files": [
+          "com_appfusions/floyd_samples/homepage/homepage.js?repoName=floyd"
+        ],
+        "include-repo"‎: ‎{‎ 
+          ‎"name"‎: ‎"floyd"‎ 
+        ‎}
+      },
+      "name": "Homepage Plus Sample",
+      "type": "com.ibm.customizer.ui"
+    }
+  ],
+  "name": "com.appfusions.customizer.floyd.samples.homepage",
+  "description": "Add new features to the homepage",
+  "services": [
+    "Customizer"
+  ],
+  "title": "Floyd Homepage"
+}

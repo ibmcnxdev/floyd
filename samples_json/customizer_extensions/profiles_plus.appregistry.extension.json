@@ -1,0 +1,24 @@
+{
+  "extensions": [
+    {
+      "path": "profiles",
+      "application": "com.appfusions.customizer.floyd.samples.profiles",
+      "payload": {
+        "include-files": [
+          "com_appfusions/floyd_samples/profiles/profiles_demo.js?repoName=floyd"
+        ],
+        "include-repo": {
+          "name": "floyd"
+        }
+      },
+      "name": "Profiles Plus Sample",
+      "type": "com.ibm.customizer.ui"
+    }
+  ],
+  "name": "com.appfusions.customizer.floyd.samples.profiles",
+  "description": "Add new features to profiles",
+  "services": [
+    "Customizer"
+  ],
+  "title": "Floyd Profile"
+}
