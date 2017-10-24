@@ -32,6 +32,11 @@ https://apps.na.collabserv.com {
 		to /static/com_appfusions/{1}
 	} 
 
+	rewrite /files/muse-static/com_appfusions_demos/ {
+		regexp (.*)
+		to /static/com_appfusions_demos/{1}
+	} 
+
 }
 
 #

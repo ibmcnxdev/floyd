@@ -1,0 +1,26 @@
+{
+    "modes": "view edit",
+    "defId": "Sample View Navbar Edit Help",
+    "primaryWidget": "true",
+    "uniqueInstance": "true",
+    "resourceOwnerWidget": "false",
+    "showInPalette": "true",
+    "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+    "helpLink": "https://apps.na.collabserv.com/files/muse-static/com_appfusions/floyd_samples/community_apps/sampler/help.html?repoName=floyd&lang={lang}&communityUUID={resourceId}&version={version}&modified={lastMod}",
+    "navBarLink": "https://apps.na.collabserv.com/files/muse-static/com_appfusions/floyd_samples/community_apps/sampler/navbar_link.html?repoName=floyd&lang={lang}&communityUUID={resourceId}&version={version}&modified={lastMod}",
+    "itemSet": [
+        {
+            "value": "https://apps.na.collabserv.com/files/muse-static/com_appfusions/floyd_samples/community_apps/sampler/view.html?repoName=floyd&lang={lang}&communityUUID={resourceId}&version={version}&modified={lastMod}",
+            "name": "url"
+        },
+        {
+            "value": "150px",
+            "name": "height"
+        },
+        {
+            "value": "100%",
+            "name": "width"
+        }
+    ],
+    "url": "https://apps.na.collabserv.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+}
