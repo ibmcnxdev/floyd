@@ -9,7 +9,7 @@
     "helpLink": "https://apps.na.collabserv.com/files/muse-static/com_appfusions/floyd_samples/community_apps/sampler/help.html?repoName=floyd&lang={lang}&communityUUID={resourceId}&version={version}&modified={lastMod}",
     "itemSet": [
         {
-            "value": "https://apps.na.collabserv.com/files/muse-static/com_appfusions/floyd_samples/community_apps/sampler/view.html?lang={lang}",
+            "value": "https://apps.na.collabserv.com/files/muse-static/com_appfusions/floyd_samples/community_apps/sampler/view.html?repoName=floyd&lang={lang}",
             "name": "url"
         },
         {
