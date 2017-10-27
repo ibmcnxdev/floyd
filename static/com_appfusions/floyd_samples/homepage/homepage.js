@@ -4,8 +4,9 @@ var __floydHooks = __floydHooks || [];
     console.log("Floyd - homepage demo loaded");
     
     hooks.push(function(floyd) {
-        // floyd.loader.loadCss('/files/muse-static/com_appfusions/floyd_samples/profiles/css/profilesCustomization.css?repoName=floyd');
+        floyd.loader.loadCss('/files/muse-static/com_appfusions/floyd_samples/homepage/css/home.css?repoName=floyd');
     })
+    
     hooks.push({
 
         // Use meetings as baseline

@@ -1,0 +1,26 @@
+{
+    "modes": "view fullpage edit", // officially only view and fullscreen are availabe but the widget XML shows IBM also has the placeholder for edit mode. Edit mode is show in the page or in the edit community screen
+    "defId": "Community app template", // It's equivalente to the XML widgetdef proprerty. This string is used as the key to identify the widget type in the communit atom document. Suggested to be a mnemonic keyword
+    "primaryWidget": "true", // Not documented for cloud, but working. Specifies that the widget displays in the center column of the page. The default value is true.
+    "uniqueInstance": "false", // Not documented for cloud, but working. Default is true. If false then the widget can be added to the community more than once.
+    "resourceOwnerWidget": "false", // False is default. If True only users with the community owner role can see/use the widget.
+    "showInPalette": "true", // Not documented for cloud, but working. Default is true. If false then the widget is not shown in the widget catalog. Can be added to the community atom document using APIs.
+    "navBarLink": "https://www.ibm.com", // Not documented for cloud, but working. If this has a value then a new item is shown in the community navigation menu with a link to the URL passed here. Goot to open a "full-app" externally
+    "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner", // Working as documented.
+    "helpLink": "http://www.ibm.com/it-it/?lang={lang}&communityUUID={resourceId}&version={version}&modified={lastMod}", // Not documented for cloud, but working. If this has a value then the widget context menu shows an "help" item. When selected a new window is opened with this url as parameter.
+    "itemSet": [
+        {
+            "value": "https://dl.dropboxusercontent.com/u/658119/ibm-connections-cloud-community-app/HTML5-Space-Invaders/HTML5-Space-Invaders.html?lang={lang}", // As documented, the URL for the iFrame, can containe substitution variables.
+            "name": "url"
+        },
+        {
+            "value": "700px",
+            "name": "height"
+        },
+        {
+            "value": "100%",
+            "name": "width"
+        }
+    ],
+    "url": "https://apps.collabservnext.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml" // This is the widget xml provided in cloud to support communty apps, MUST NOT CHANGE
+}

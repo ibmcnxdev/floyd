@@ -4,12 +4,8 @@
       "path": "global",
       "application": "com.appfusions.customizer.floyd_core",
       "payload": {
-        "include-files": [
-          "com_appfusions/floyd_core/core.global.js"
-        ],
-        "include-repo"‎: ‎{‎ 
-          ‎"name"‎: ‎"floyd"‎ 
-        ‎}
+        "include-repo" : { "name": "floyd" },
+        "include-files": [ "com_appfusions/floyd_core/core.global.js" ]
       },
       "name": "AppFusions Floyd Core extensions",
       "type": "com.ibm.customizer.ui"

@@ -18,8 +18,16 @@
         _topicCallback : null,
     
         messageListener : null,
+
+        widgetInstanceId : null,
     
         _init : function(widgetContext) {
+            console.log(widgetContext);
+
+            if (this.widgetInstanceId == null) {
+                this.widgetInstanceId = widgetContext.source.widgetInstanceId;
+                console.log('New widget instance id from appReady ' + this.widgetInstanceId);
+            }
             if (typeof this._initHandler === "function") {
                 this._initHandler(widgetContext);
             }
@@ -29,10 +37,7 @@
             this._initHandler = callBack;
         },
         appReady : function() {
-            parent.postMessage({
-                'command' : 'appReady',
-                'widgetInstanceId' : this._queryParams.widgetInstanceId
-            }, '*');
+            parent.postMessage('appReady', '*');
         },
         // Sends the container a message to adjust the iWidget / iFrame height
         setHeight : function(height) {
@@ -43,11 +48,14 @@
                 height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
             }
     
+            /*
             parent.postMessage( {
                 'command' : 'setHeight',
                 'height' : height,
                 'widgetInstanceId' : this._queryParams.widgetInstanceId
             }, '*');
+            */
+            parent.postMessage( 'setHeight|' + this.widgetInstanceId +                 '|' + height, '*');
         },
         // Sets the "widgetTitle" property of the iWidget. Only available to a user with ownership rights over the widget/community
         setTitle : function(newTitle) {
@@ -138,9 +146,12 @@
     
         if (typeof cnxApp._queryParams.widgetInstanceId === 'undefined') {
             console.log('[E] cannot get widgetInstanceId from URL', location.href);
+        } else {
+            cnxApp.widgetInstanceId = cnxApp._queryParams.widgetInstanceId;
         }
     
         cnxApp.messageListener = window.addEventListener('message', function(event) {
+            console.log('got message')
             // If event is valid then check type and passa data to cnxApp;
             if (typeof event.data === 'object') {
                 if (typeof event.data.source === 'object' &&

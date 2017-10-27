@@ -12,6 +12,7 @@ var __floydHooks = __floydHooks || [];
             floyd.apps.runApplication('#socialTagsSection', 'before', '/files/muse-static/com_appfusions/floyd_samples/profiles/social/index.html?repoName=floyd', '100%', '40px', false, false, { test: 'blue' } );
             floyd.apps.runApplication('#profileHeader', 'after', '/files/muse-static/com_appfusions/floyd_samples/common/index.html?repoName=floyd', '100%', '40px', false, false, { test: 'blue' } );
             floyd.apps.runApplication('#friendsSection', 'after', '/files/muse-static/com_appfusions/floyd_samples/profiles/myPayroll/index.html?repoName=floyd', '100%', '200px', false, false, { test: 'blue' } );
+            floyd.apps.runApplication('#friendsSection', 'after', '/files/muse-static/com_appfusions/floyd_samples/profiles/myLearning/index.html?repoName=floyd', '100%', '200px', false, false, { test: 'blue' } );
         } 
     });
 

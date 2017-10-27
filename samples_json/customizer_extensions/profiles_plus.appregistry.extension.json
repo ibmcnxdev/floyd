@@ -5,7 +5,7 @@
       "application": "com.appfusions.customizer.floyd.samples.profiles",
       "payload": {
         "include-files": [
-          "com_appfusions/floyd_samples/profiles/profiles_demo.js?repoName=floyd"
+          "com_appfusions/floyd_samples/profiles/profiles_demo.js"
         ],
         "include-repo": {
           "name": "floyd"

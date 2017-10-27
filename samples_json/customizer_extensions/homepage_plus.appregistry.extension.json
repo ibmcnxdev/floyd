@@ -5,11 +5,11 @@
       "application": "com.appfusions.customizer.floyd.samples.homepage",
       "payload": {
         "include-files": [
-          "com_appfusions/floyd_samples/homepage/homepage.js?repoName=floyd"
+          "com_appfusions/floyd_samples/homepage/homepage.js"
         ],
-        "include-repo"‎: ‎{‎ 
-          ‎"name"‎: ‎"floyd"‎ 
-        ‎}
+        "include-repo" :‎ {
+          "name"‎: "floyd"
+        }
       },
       "name": "Homepage Plus Sample",
       "type": "com.ibm.customizer.ui"
