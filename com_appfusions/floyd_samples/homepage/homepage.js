@@ -4,7 +4,7 @@ var __floydHooks = __floydHooks || [];
     console.log("Floyd - homepage demo loaded");
     
     hooks.push(function(floyd) {
-        floyd.loader.loadCss('/files/muse-static/com_appfusions/floyd_samples/homepage/css/home.css?repoName=floyd');
+        floyd.loader.loadCss('/files/customizer/com_appfusions/floyd_samples/homepage/css/home.css?repoName=floyd');
     })
     
     hooks.push({
@@ -12,9 +12,9 @@ var __floydHooks = __floydHooks || [];
         // Use meetings as baseline
         query: '#72ff08f8-7111-4d31-8f85-fe99866219f2_container', 
         callback: function(floyd) {
-            floyd.apps.runApplication('#72ff08f8-7111-4d31-8f85-fe99866219f2_container', 'before', '/files/muse-static/com_appfusions/floyd_samples/common/youtube-floyd.html?repoName=floyd', '100%', '240px', false, false, {  } );
-            floyd.apps.runApplication('#activityStreamHeader', 'before', '/files/muse-static/com_appfusions/floyd_samples/common/index.html?repoName=floyd', '100%', '40px', false, false, {  } );
-            floyd.apps.runApplication('#com_ibm_social_as_nav_ASSideNav_0', 'after', '/files/muse-static/com_appfusions/floyd_samples/common/index.html?repoName=floyd', '100%', '200px', false, false, {  } );
+            floyd.apps.runApplication('#72ff08f8-7111-4d31-8f85-fe99866219f2_container', 'before', '/files/customizer/com_appfusions/floyd_samples/common/youtube-floyd.html?repoName=floyd', '100%', '240px', false, false, {  } );
+            floyd.apps.runApplication('#activityStreamHeader', 'before', '/files/customizer/com_appfusions/floyd_samples/common/index.html?repoName=floyd', '100%', '40px', false, false, {  } );
+            floyd.apps.runApplication('#com_ibm_social_as_nav_ASSideNav_0', 'after', '/files/customizer/com_appfusions/floyd_samples/common/index.html?repoName=floyd', '100%', '200px', false, false, {  } );
         } 
     });
 
