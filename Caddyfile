@@ -11,7 +11,7 @@
 # 3- Proxy exceptions and rewrite rules in this configuration exclude a subset of the Connections Customizer url space
 # 4- A rewrite rule maps local filesystem to the muse-static url space allowing to load resources from local
 
-https://apps.na.collabserv.com {
+https://apps.ce.collabserv.com {
 
 	# 2 - Setup self signed certificate
 	tls self_signed
@@ -19,11 +19,15 @@ https://apps.na.collabserv.com {
 	# 3 - Setup proxy rule to reverse-proxy the actual  Connections Cloud environmnet
 	#	- Notice the "except" rule excluding paths served by your customization
 
-	proxy / https://23.223.76.234 {
+	proxy / https://104.83.92.234 {
 		header_upstream Host {host}
 		header_downstream -Strict-Transport-Security ""
 		except /files/muse-static/com_appfusions /static
 		insecure_skip_verify
+	}
+
+    proxy /activerse/ http://localhost:3000/ {
+
 	}
 
 	# 4 - Setup a rewrite rule serving local resources as if they were deployed in Connections Customizer
