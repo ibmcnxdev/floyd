@@ -6,10 +6,10 @@
     "resourceOwnerWidget": "false",
     "showInPalette": "true",
     "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
-    "helpLink": "https://apps.na.collabserv.com/files/muse-static/com_appfusions/floyd_samples/community_apps/sampler/help.html?repoName=floyd&lang={lang}&communityUUID={resourceId}&version={version}&modified={lastMod}",
+    "helpLink": "https://apps.na.collabserv.com/files/customizer/com_appfusions/floyd_samples/community_apps/sampler/help.html?repoName=floyd&lang={lang}&communityUUID={resourceId}&version={version}&modified={lastMod}",
     "itemSet": [
         {
-            "value": "https://apps.na.collabserv.com/files/muse-static/com_appfusions/floyd_samples/community_apps/sampler/view.html?repoName=floyd&lang={lang}&communityUUID={resourceId}&version={version}&modified={lastMod}",
+            "value": "https://apps.na.collabserv.com/files/customizer/com_appfusions/floyd_samples/community_apps/sampler/view.html?repoName=floyd&lang={lang}&communityUUID={resourceId}&version={version}&modified={lastMod}",
             "name": "url"
         },
         {
