@@ -24,7 +24,7 @@ var __floydHooks = __floydHooks || [];
 
     hooks.push(function(floyd) {
         console.log('Custom CSS loaded');
-        floyd.loader.loadCss('/files/muse-static/com_appfusions/floyd_samples/global/css/global.css');
+        floyd.loader.loadCss('/files/customizer/com_appfusions/floyd_samples/global/css/global.css?repoName=floyd');
     })
 
     if (require('floyd')) {
