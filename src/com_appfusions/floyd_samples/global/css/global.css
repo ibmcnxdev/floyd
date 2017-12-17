@@ -1,0 +1,15 @@
+/*
+
+__floyd.loader.loadCss('/files/customizer/com_appfusions/floyd_samples/global/css/global.css?repoName=floyd');
+
+*/
+.ics-scbanner {
+    background-color: black !important;
+}
+
+.lotusui30 .lotusTitleBar2 .lotusInner .titleBarBody img {
+    border-radius: 20%;
+}
+.activityStreamPhotoOf {
+    border-radius: 20%;
+}
